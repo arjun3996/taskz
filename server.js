@@ -1,10 +1,12 @@
+require('dotenv').config()
+
 const express = require('express')
 const cors = require('cors')
 const path = require('path')
 const assert = require('assert')
 const taskRoute = require('./route/taskRoute')
 
-const port = 5000
+const port = port.env.PORT || Number(5000)
 
 const app = express()
 
