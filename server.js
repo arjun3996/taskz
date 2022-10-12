@@ -6,7 +6,7 @@ const path = require('path')
 const assert = require('assert')
 const taskRoute = require('./route/taskRoute')
 
-const port = port.env.PORT || Number(5000)
+const port = process.env.PORT || Number(5000)
 
 const app = express()
 
